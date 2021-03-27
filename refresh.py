@@ -33,9 +33,9 @@ def populate(json, df, dftype):
         tmp_country_latest = row[-1]
 
         tmp_country_position = {}
-        if(not(math.isnan(row['Lat'])))
+        if not math.isnan(row['Lat']):
             tmp_country_position['latitude'] = row['Lat']
-        if(not(math.isnan(row['Long'])))
+        if not math.isnan(row['Long']):
             tmp_country_position['longitude'] = row['Long']
 
         tmp_country_history = {}
